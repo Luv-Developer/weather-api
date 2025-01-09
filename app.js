@@ -35,7 +35,7 @@ app.post("/register",async(req,res)=>{
             })
             let token = jwt.sign({email},"hehe")
             res.cookie("token",token)
-            res.redirect("homepage")
+            res.render("homepage")
         })
     }
 })
@@ -53,7 +53,7 @@ app.post("/login",async(req,res)=>{
             if(result){
                 let token = jwt.sign({email},"hehe")
                 res.cookie("token",token)
-                res.render("api")
+                res.redirect("api")
             }
             else{
                 res.send("Something went Wrong")
