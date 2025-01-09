@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body{
+            display:flex;
+            min-height:90vh;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(37, 37, 37);
+        }
+        .container{
+            padding:10px 10px;
+            border:2px solid white;
+            background-color: gray;
+            border-radius: 10px;
+        }
+        h1{
+            text-align: center;
+            color:rgb(251, 255, 0);
+        }
+        button{
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form action = "/register" method = "post">
+        <div class="container">
+            <h1>Register</h1>
+            <input type = "text" placeholder="username" name = "username">
+            <br>
+            <input type = "email" placeholder="email" name = "email">
+            <br>
+            <input type = "password" placeholder="password" name = "password">
+            <br><br>
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>

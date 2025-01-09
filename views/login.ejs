@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            display: flex;
+            min-height: 80vh;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(34, 34, 34);
+        }
+        .container{
+            padding:10px 10px;
+            background-color: gray;
+            border:2px solid white;
+            border-radius: 10px;
+        }
+        h1{
+            text-align: center;
+            color:rgb(167, 245, 11);
+        }
+        button{
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form action = "/login" method = "post">
+        <div class="container">
+            <h1>Login</h1>
+            <input type = "email" placeholder="email" name = "email">
+            <br>
+            <input type = "password" placeholder="password" name = "password">
+            <br><br>
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>
